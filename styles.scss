@@ -1,0 +1,204 @@
+$font-fam: Helvetica, Sans-Serif;
+$font-size: 20px;
+
+$midnight: #141415;
+$blue: #27607C;
+$yellow: #FAA613;
+$red: #D1462F;
+
+
+
+:root {
+    #{--fonter}: $font-fam;
+}
+
+body {
+    font-family: var(--fonter);
+    font-size: $font-size;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    label {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem 0;
+        span {
+            font-size: 1em;
+            padding-bottom: 0.25rem;
+        }
+
+        input {
+            font-size: 0.75em;
+        }
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        label {
+            margin-right: 2rem;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+a {
+    color: gray;
+}
+
+p {
+    font-size: $font-size;
+}
+
+h1 {
+    font-size: $font-size * 2;
+}
+
+h1.section-heading {
+    padding: 3rem 0 0.75rem 0;
+    border-bottom: 5px $midnight solid;
+}
+
+h2 {
+    font-size: $font-size * 1.5;
+}
+
+h3 {
+    font-size: $font-size * 1.25;
+}
+
+pre {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    padding: 1rem;
+    border: $midnight 1px solid;
+    border-radius: 0.2rem;
+    width: 100%;
+    white-space:normal;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.container {
+    margin: 5rem 10rem;
+}
+
+.blue {
+    background-color: $blue;
+    border: $blue 1px solid;
+}
+
+.yellow {
+    background-color: $yellow;
+    border: $yellow 1px solid;
+}
+
+.red {
+    background-color: $red;
+    border: $red 1px solid;
+}
+
+button {
+    transition-duration: 150ms;
+    opacity: 1;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: $midnight;
+    border: $midnight 1px solid;
+    border-radius: 0.2rem;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15);
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+
+// NavBar
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: $midnight;
+    padding: 0 9rem;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: all 500ms ease;
+
+        li {
+            transition: all 500ms ease;
+
+            a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: #28282A;
+            }
+
+            a.active {
+                background-color: $midnight;
+            }
+
+            ul {
+                min-width: 5rem;
+                position: absolute;
+                flex-direction: column;
+                display: none;
+                opacity: 0;
+
+                li {
+                    display: none;
+                    opacity: 0;
+                }
+            }
+
+            
+        }
+
+        li:hover {
+            transition: all 500ms ease;
+            ul {
+                opacity: 1;
+                display: flex;
+                transition: all 500ms ease;
+                li {
+                    color: #fff;
+                    background: $midnight;
+                    display: block;
+                    float: left;
+                    padding: 1rem;
+                    position: relative;
+                    text-decoration: none;
+                    transition-duration: 500ms;
+                    display: block;
+                    opacity: 1;
+                }
+
+                li:hover {
+                    color: $midnight;
+                    background: white;
+                }
+            }
+        }
+    }
+    
+}

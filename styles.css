@@ -1,0 +1,180 @@
+:root {
+  --fonter: Helvetica, Sans-Serif;
+}
+
+body {
+  font-family: var(--fonter);
+  font-size: 20px;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+form label span {
+  font-size: 1em;
+  padding-bottom: 0.25rem;
+}
+form label input {
+  font-size: 0.75em;
+}
+form div {
+  display: flex;
+  flex-direction: row;
+}
+form div label {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: gray;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1.section-heading {
+  padding: 3rem 0 0.75rem 0;
+  border-bottom: 5px #141415 solid;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+pre {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding: 1rem;
+  border: #141415 1px solid;
+  border-radius: 0.2rem;
+  width: 100%;
+  white-space: normal;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.container {
+  margin: 5rem 10rem;
+}
+
+.blue {
+  background-color: #27607C;
+  border: #27607C 1px solid;
+}
+
+.yellow {
+  background-color: #FAA613;
+  border: #FAA613 1px solid;
+}
+
+.red {
+  background-color: #D1462F;
+  border: #D1462F 1px solid;
+}
+
+button {
+  transition-duration: 150ms;
+  opacity: 1;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #141415;
+  border: #141415 1px solid;
+  border-radius: 0.2rem;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #141415;
+  padding: 0 9rem;
+}
+nav.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 500ms ease;
+}
+nav.navbar ul li {
+  transition: all 500ms ease;
+}
+nav.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav.navbar ul li a:hover {
+  background-color: #28282A;
+}
+nav.navbar ul li a.active {
+  background-color: #141415;
+}
+nav.navbar ul li ul {
+  min-width: 5rem;
+  position: absolute;
+  flex-direction: column;
+  display: none;
+  opacity: 0;
+}
+nav.navbar ul li ul li {
+  display: none;
+  opacity: 0;
+}
+nav.navbar ul li:hover {
+  transition: all 500ms ease;
+}
+nav.navbar ul li:hover ul {
+  opacity: 1;
+  display: flex;
+  transition: all 500ms ease;
+}
+nav.navbar ul li:hover ul li {
+  color: #fff;
+  background: #141415;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 500ms;
+  display: block;
+  opacity: 1;
+}
+nav.navbar ul li:hover ul li:hover {
+  color: #141415;
+  background: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

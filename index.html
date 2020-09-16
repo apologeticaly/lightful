@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Lightful CSS Framework</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<p class="title">LightfulCSS Beta V1.0</p>
+	<nav class="navbar">
+		<ul>
+			<li><a href="">LightfulCSS</a></li>
+		</ul>
+		<ul>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#headings">Headings</a>
+				<ul>
+					<li>Test Item</li>
+					<li>Test Item 2</li>
+					<li>Test Item 3</li>
+				</ul>
+			</li>
+			<li><a href="#type">Type</a></li>
+			<li><a href="#buttons">Buttons</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<!-- <li><a href="#footer">Footer</a></li> -->
+		</ul>
+		<ul>
+			<li><a href="https://github.com/apologeticaly/lightful">GitHub</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+
+
+		<section id="colors">
+			<h1>Colors</h1>
+			<div class="color-grid">
+
+				<div style="background-color: #141415; color: white;">$midnight</div>
+				<div style="background-color: #FAA613;">$yellow</div>
+				<div style="background-color: #27607C; color: white;">$blue</div>
+				<div style="background-color: #D1462F; color: white;">$red</div>
+			</div>
+		</section>
+
+		<section id="headings">
+			<h1 class="section-heading">Section Headings</h1>
+			<h1>H1 Heading</h1>
+			<h2>H2 Heading</h2>
+			<h3>H3 Heading</h3>
+			<h4>H4 Heading</h4>
+			<h5>H5 Heading</h5>
+			<h6>H6 Heading</h6>
+
+			<pre>
+				<code>
+&lt;h1&gt;Headings&lt;/h1&gt; <br> 
+&lt;h1&gt;H1 Heading&lt;/h1&gt; <br> 
+&lt;h2&gt;H2 Heading&lt;/h2&gt; <br> 
+&lt;h3&gt;H3 Heading&lt;/h3&gt; <br> 
+&lt;h4&gt;H4 Heading&lt;/h4&gt; <br> 
+&lt;h5&gt;H5 Heading&lt;/h5&gt; <br> 
+&lt;h6&gt;H6 Heading&lt;/h6&gt; <br> 
+				</code>
+			</pre>
+		</section>
+
+		<section id="type">
+			<h1 class="section-heading">Paragraph styles</h1>
+			<p>This is the <strong>strong tag</strong> in a paragraph.
+				This is the <em>em tag in a paragraph</em>, elements such
+				as &lt;strong&gt; and &lt;em&gt; are inline. Here is an
+				example of the <abbr>abbreviation tag.</abbr> You'd use
+				abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
+				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
+
+			<pre>
+				<code>
+&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
+				</code>
+			</pre>
+			<section>
+				<h2>Links</h2>
+				<p>This <a href="#">paragraph</a> contains a couple <a href="#">links</a> to show off their styles in
+					context.</p>
+			</section>
+		</section>
+
+		<section id="buttons">
+			<h1 class="section-heading">Buttons</h1>
+
+			<p>This is your average button. You might want to click it.</p>
+
+			<button>Submit</button>
+			<button class="blue">Submit</button>
+			<button class="yellow">Submit</button>
+			<button class="red">Submit</button>
+
+
+			<pre>
+				<code>
+&lt;button&gt;Submit&lt;/button&gt;
+				</code>
+			</pre>
+
+			<p>This button has consequences. You might want to think twice before clicking.</p>
+			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
+			<p>
+				<button class="red">Delete</button>
+				<button>Go!</button>
+			</p>
+
+			<pre>
+				<code>
+&lt;button 
+	style=&quot;--weight: bold; 
+	--background-color: #f85353;&quot;
+&gt;Delete&lt;/button&gt;
+
+&lt;button 
+	style=&quot;--background-color: #6bc253;&quot;
+&gt;Go!&lt;/button&gt;
+				</code>
+			</pre>
+		</section>
+
+
+
+		<section id="forms">
+			<h1 class="section-heading">Forms</h1>
+			<form>
+				<label>
+					<span>Text:</span>
+					<input type="text" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Email:</span>
+					<input type="email" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Password:</span>
+					<input type="password" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Your comments</span>
+					<textarea placeholder="Your comment"></textarea>
+				</label>
+
+				<!-- Switch with Click -->
+				<div>
+					<label id="switch-2" class="switch-2">
+						<input type="checkbox">
+						<span>Click Switch no JS</span>
+					</label>
+					
+					<label class="control-checkbox">
+						<input type="checkbox" checked="checked">
+						<span>One</span>
+					</label>
+					<button class="red">Delete</button>
+					<button style="margin-left: 0.5rem;">Submit</button>
+				</div>
+
+				
+
+
+			</form>
+		</section>
+
+
+		<!-- <section id="footers">
+			<h2>Page Footer</h2>
+			<div class="page-footer">
+				<ul>
+					<li>
+						<h3>Column 1</h3>
+					</li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Column 2</h3>
+					</li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Column 3</h3>
+					</li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+			</div>
+		</section> -->
+	</div>
+	</div>
+</body>
+
+</html>
